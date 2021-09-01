@@ -9,12 +9,13 @@ public class KoscheiTheDeathless {
 
     private Ocean1 ocean;
 
-    public String getRulesByDeth() {
-        return "На свете есть океан , " + ocean.toString();
-    }
-
+    /* KoscheiTheDeathless связывается с Ocean1 через сеттер setOcean и аннотации @Autowired над ней.*/
     @Autowired
     public void setOcean(Ocean1 ocean) {
         this.ocean = ocean;
+    }
+
+    public String getRulesByDeth() {
+        return "На свете есть океан , " + ocean.toString();
     }
 }
